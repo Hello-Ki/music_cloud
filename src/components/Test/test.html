@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script>
+  const obj = {
+    name: 'Lily',
+    nickName: 'Lady Smith',
+    age: 17,
+    chineseName: '莉莉',
+    children: void 0
+  }
+  function uniform(obj) {
+    const res = Object.entries(obj)
+    res.sort()
+    const data = res.reduce((pre, cur, index) => {
+      if (!cur[1]) return pre
+      cur[0] = cur[0].toLowerCase()
+      cur[1] = encodeURI(cur[1])
+      pre[cur[0]] = cur[1]
+      return pre
+    }, {})
+    return data
+  }
+  console.log(uniform(obj))
+  const a = [2, 4, 8]
+  console.log(a.slice(-1)[0])
+</script>
+</html>

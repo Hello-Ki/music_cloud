@@ -1,0 +1,20 @@
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  width: 1263px;
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgb(51, 51, 51);
+  min-width: 982px;
+}
+html {
+  overflow: scroll;
+  overflow-x: auto;
+}
+a {
+  text-decoration: none;
+}
+body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, section, p, input, td, th, ins {
+  margin: 0;
+  padding: 0;
+}
